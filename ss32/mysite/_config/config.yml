@@ -1,0 +1,8 @@
+---
+Name: mysite
+After:
+  - 'framework/*'
+---
+Director:
+  rules:
+    'api/v1': 'ApiController'
