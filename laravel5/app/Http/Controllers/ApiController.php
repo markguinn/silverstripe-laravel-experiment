@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use App\Bird;
+
 /**
  * @author Mark Guinn <mark@adaircreative.com>
  * @date 11.01.2015
@@ -11,5 +13,13 @@ class ApiController extends Controller
 		return \Response::json([
 			'hello' => 'world',
 		]);
+	}
+
+	public function getBird($id) {
+		return Bird::findOrFail($id);
+	}
+
+	public function getBirds() {
+		return Bird::all();
 	}
 }
