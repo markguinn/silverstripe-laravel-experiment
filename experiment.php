@@ -1,7 +1,7 @@
 <?php
 $reps = 100;
 $base = 'http://localhost/ss-laravel';
-$urls = ['ss32','laravel5/public'];
+$urls = ['ss32','laravel5/public','ss32-cms'];
 $routes = ['api/v1','api/v1/bird/1','api/v1/birds'];
 $out = fopen('php://stdout', 'w');
 fputcsv($out, ['site','route','rep','ms']);
